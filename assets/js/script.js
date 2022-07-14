@@ -10,9 +10,18 @@ $(document).ready(function(){
     })
 
 function timeTrack() {
-    var now = moment().hour():
+    var currentTime = moment().hour();
+    console.log(currentTime)
     
-    
+    $(".time-block").each(function() {
+        var timeLog = parseInt($(this).attr("id").split("hour")[1]);
+        console.log("timeLog check" + timeLog);
+
+        if()
+
+
+
+    }
 }
 
 }
