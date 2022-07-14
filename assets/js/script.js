@@ -17,11 +17,25 @@ function timeTrack() {
         var timeLog = parseInt($(this).attr("id").split("hour")[1]);
         console.log("timeLog check" + timeLog);
 
-        if()
+        if(timeLog < now){
+            $(this).removeClass("future");
+            $(this).removeClass("present");
+            $(this).addClass("past");
+        }
+        else if(timeLog === now) {
+            $(this).removeClass("future");
+            $(this).removeClass("past");
+            $(this).addClass("present"); 
+        }
+        else{
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+            $(this).addClass("future");
+        }
 
 
 
     }
-}
+})
 
 }
