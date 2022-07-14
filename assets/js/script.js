@@ -8,5 +8,11 @@ $(document).ready(function(){
         var time = $(this).parent().attr("id");
         localStorage.setItem(text, time);
     })
+
+function timeTrack() {
+    var now = moment().hour():
     
+    
+}
+
 }
