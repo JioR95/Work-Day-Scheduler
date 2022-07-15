@@ -1,10 +1,11 @@
-.body {
+body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: lightcyan;
 }
 
-.textarea{
+textarea{
   background: transparent;
   border: none;
   resize: none;
@@ -24,10 +25,6 @@
 
 .description{
   white-space: pre-wrap;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .time-block{
@@ -43,14 +40,9 @@
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: gold;
+  color:black;
   border-top: 1px dashed #000000;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  opacity: .9;
-  justify-content: center;
 }
 
 .past {
@@ -72,8 +64,8 @@
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+  background-color: lightskyblue;
+  color: gold;
 }
 
 .saveBtn i:hover {
