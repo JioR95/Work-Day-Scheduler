@@ -44,6 +44,11 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  opacity: .5;
+  justify-content: center;
 }
 
 .past {
