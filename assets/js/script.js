@@ -6,14 +6,14 @@ $(document).ready(function(){
     $(".saveBtn").on("click", function(){
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
-        localStorage.setItem(text, time);
+        localStorage.setItem(text,time);
     })
 
-function timeTrack() {
+function timeTrack(){
     var currentTime = moment().hour();
     console.log(currentTime)
     
-    $(".time-block").each(function() {
+    $(".time-block").each(function(){
         var timeLog = parseInt($(this).attr("id").split("hour")[1]);
         console.log("timeLog check" + timeLog);
 
@@ -22,7 +22,7 @@ function timeTrack() {
             $(this).removeClass("present");
             $(this).addClass("past");
         }
-        else if(timeLog === now) {
+        else if(timeLog === now){
             $(this).removeClass("future");
             $(this).removeClass("past");
             $(this).addClass("present"); 
@@ -32,10 +32,7 @@ function timeTrack() {
             $(this).removeClass("present");
             $(this).addClass("future");
         }
-
-
-
-    }
-})
-
+       
+    })
 }
+$("#hour-7 .description").val(localStorage.getItem("hour-7"));
